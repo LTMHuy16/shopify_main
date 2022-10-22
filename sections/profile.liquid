@@ -1,0 +1,39 @@
+{%- if section.settings.title -%}
+    {{ section.settings.title }}
+{%- endif -%}
+
+{%- if section.settings.blocks -%}
+    
+{%- endif -%}
+
+{% schema %}
+{
+   "name": "profile",
+   "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Slideshow"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Slide",
+            "type": "slide",
+            "settings": [
+                {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "category": "Profile",
+            "name":"Profile"
+        }
+    ]
+}
+{% endschema %}
