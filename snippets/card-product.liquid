@@ -12,7 +12,7 @@
 
     <div class="card__price">
       {%- if card_product.price > card_product.compare_at_price -%}
-        <div class="card__price--sale">{{  }}</div>
+        <div class="card__price--sale">{{ card_product.compare_at_price }}</div>
       {%- endif -%}
       {%- if card_product.price -%}
         {{ card_product.price }}
