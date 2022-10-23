@@ -14,6 +14,7 @@
     <div class="card__price">
       {%- if card_product.compare_at_price > card_product.price -%}
         <div class="card__price--sale">Sale: --- {{ card_product.compare_at_price }}</div>
+      
       {%- endif -%}
       {%- if card_product.price -%}
         {{ card_product.price }}
