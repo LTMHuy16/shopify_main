@@ -1,6 +1,6 @@
 {%- if card_product and card_product != empty -%}
   <div class="card__wrapper">
-    
+    {%- assign hover_class = 'test' -%}
     {%- if card_product.featured_media -%}
       {{ card_product.featured_media | image_url: width: 450 | image_tag: loading: 'lazy', class: hover_class }}
     {%- else -%}
