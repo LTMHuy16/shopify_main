@@ -9,8 +9,11 @@
     {%- if card_product.title != blank -%}
       <h3 class="card__title">{{ card_product.title }}</h3>
     {%- endif -%}
-    {%- if card_product.price -%}
-      {{ card-product.price }}
-    {%- endif -%}
+
+    <div class="card__price">
+      {%- if card_product.price -%}
+        {{ card-product.price }}
+      {%- endif -%}
+    </div>
   </div>
 {%- endif -%}
