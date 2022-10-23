@@ -1,7 +1,10 @@
 {%- if card_product and card_product != empty -%}
   <div class="card__wrapper">
     {%- if card_product.featured_media -%}
-    {{ card_product.featured_media | image_url: width: 450 | image_tag }}
+      {{ card_product.featured_media | image_url: width: 450 | image_tag }}
+    {%- else -%}
+      
     {%- endif -%}
+    
   </div>
 {%- endif -%}
