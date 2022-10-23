@@ -11,7 +11,9 @@
     {%- endif -%}
 
     <div class="card__price">
-      
+      {%- if card_product.price > card_product.compare_at_price -%}
+        
+      {%- endif -%}
       {%- if card_product.price -%}
         {{ card-product.price }}
       {%- endif -%}
