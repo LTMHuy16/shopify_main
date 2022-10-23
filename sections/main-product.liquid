@@ -6,7 +6,9 @@
   <div class="product">
 		<div class="product__media-wrapper">
 			{% for media in product.media %}
-				
+				{%- if media.media_type == 'image' -%}
+					
+				{%- endif -%}
 			{% endfor %}
 		</div>
     <div class="product__info-wrapper">
