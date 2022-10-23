@@ -16,7 +16,7 @@
         <div class="card__price--sale">Sale: --- {{ card_product.compare_at_price }}</div>
       {%- elsif card_product.price_varies -%}
         <div class="price__element-variant">
-          {{  }}
+          {{ card_product.price_min | money }}
         </div>
       {%- endif -%}
       {%- if card_product.price -%}
