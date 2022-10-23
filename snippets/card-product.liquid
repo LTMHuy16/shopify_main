@@ -6,6 +6,8 @@
     {%- else -%}
       {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
     {%- endif -%}
-    <h3 class="card__title">{{ card_product.title }}</h3>
+    {%- if card_product.title != blank -%}
+      <h3 class="card__title">{{ card_product.title }}</h3>
+    {%- endif -%}
   </div>
 {%- endif -%}
