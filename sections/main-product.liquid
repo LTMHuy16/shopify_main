@@ -7,7 +7,7 @@
 		<div class="product__media-wrapper">
 			{% for media in product.media %}
 				{%- if media.media_type == 'image' -%}
-					{{ media | img_url: width: 160 | img_tag: loading: 'lazy' }}
+					{{ media | image_url: width: 450 }}
 				{%- endif -%}
 			{% endfor %}
 		</div>
