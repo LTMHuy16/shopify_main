@@ -3,7 +3,7 @@
     {%- if card_product.featured_media -%}
       {{ card_product.featured_media | image_url: width: 450 | image_tag }}
     {%- else -%}
-      {{ 'image' | placeholder_svg_tag }}
+      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
     {%- endif -%}
     
   </div>
