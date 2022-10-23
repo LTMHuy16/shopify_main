@@ -1,4 +1,5 @@
 {%- if card_product and card_product != empty -%}
+<a href="{{ card_product.url }}"></a>
   <div class="card__wrapper">
     {%- assign hover_class = 'test' -%}
     {%- if card_product.featured_media -%}
